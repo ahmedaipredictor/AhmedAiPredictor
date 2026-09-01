@@ -44,16 +44,14 @@
         .animate-fade-out { animation: fadeOutDown 0.4s ease-out forwards; }
     </style>
 </head>
-<body class="bg-[#050505] text-zinc-300 min-h-screen flex flex-col items-center p-4 overflow-x-hidden">
+<body class="bg-[#050505] text-zinc-300 min-h-screen flex flex-col items-center p-4 overflow-x-hidden" dir="rtl">
 
     <!-- VIEW 1: LANDING PAGE -->
     <div id="view-landing" class="flex-1 w-full max-w-xl flex flex-col items-center justify-center animate-fade-in">
         <div class="text-center mb-10">
-            <svg class="w-28 h-28 mx-auto mb-4 fill-white drop-shadow-[0_0_15px_rgba(59,130,246,0.6)]" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-                <path d="M40 20 L50 35 L40 50 L55 50 L65 30 L55 20 Z" />
-                <path d="M60 40 L65 50 L55 60 L65 60 L75 45 L65 35 Z" />
-                <path d="M70 55 L75 65 L65 75 L75 75 L85 60 L75 50 Z" />
-            </svg>
+            <div class="w-24 h-24 mx-auto mb-4 bg-blue-600/20 border border-blue-500/40 rounded-3xl flex items-center justify-center shadow-[0_0_25px_rgba(59,130,246,0.3)]">
+                <span class="text-4xl font-black text-blue-500">A</span>
+            </div>
             <h1 class="text-4xl font-black text-white tracking-tighter mb-2" style="font-family: sans-serif;">AHMED AI <span class="text-blue-500">PREDICTOR</span></h1>
             <p class="text-sm text-zinc-500 uppercase tracking-widest font-bold">منظومة التوقع والاختراق v2.4</p>
         </div>
@@ -66,7 +64,7 @@
             </p>
             <button type="button" id="btn-start" class="w-full bg-blue-600 hover:bg-blue-500 text-white py-4 rounded-xl font-bold text-lg tracking-wider transition-all shadow-[0_0_20px_rgba(37,99,235,0.4)] flex items-center justify-center gap-3 group">
                 تفعيل المنظومة وابدأ الخدمة
-                <svg class="w-5 h-5 group-hover:-translate-x-2 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                <svg class="w-5 h-5 group-hover:-translate-x-2 transition-transform transform rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
             </button>
         </div>
     </div>
@@ -90,11 +88,9 @@
         <!-- Header -->
         <div class="w-full flex items-center justify-between mb-8 pb-4 border-b border-zinc-800">
             <div class="flex items-center gap-3">
-                <svg class="w-10 h-10 fill-white drop-shadow-[0_0_8px_rgba(59,130,246,0.5)]" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M40 20 L50 35 L40 50 L55 50 L65 30 L55 20 Z" />
-                    <path d="M60 40 L65 50 L55 60 L65 60 L75 45 L65 35 Z" />
-                    <path d="M70 55 L75 65 L65 75 L75 75 L85 60 L75 50 Z" />
-                </svg>
+                <div class="w-10 h-10 bg-blue-600/20 border border-blue-500/40 rounded-xl flex items-center justify-center">
+                    <span class="text-lg font-black text-blue-500">A</span>
+                </div>
                 <div>
                     <div class="flex items-center gap-2 mb-1">
                         <span class="w-2 h-2 bg-green-500 rounded-full animate-pulse shadow-[0_0_8px_rgba(34,197,94,0.8)]"></span>
@@ -115,7 +111,6 @@
             <button type="button" data-game="MINES" class="game-btn bg-[#0a0a0c] border border-zinc-800 rounded-2xl p-3 flex flex-col items-center justify-center gap-3">
                 <div class="w-16 h-16 rounded-xl overflow-hidden bg-gradient-to-br from-indigo-900 to-black border border-indigo-500/30 flex items-center justify-center game-icon-container relative shadow-inner">
                      <span class="text-3xl relative z-10 drop-shadow-lg">💣</span>
-                     <div class="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAiIGhlaWdodD0iMjAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTE5IDBMMTkgMjBMMCAyMCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSJyZ2JhKDI1NSwyNTUsMjU1LDAuMDUpIiBzdHJva2Utd2lkdGg9IjEiLz48L3N2Zz4=')] opacity-50 z-0"></div>
                 </div>
                 <span class="font-black text-xs text-white tracking-wider" style="font-family: sans-serif;">MINES</span>
             </button>
@@ -124,7 +119,6 @@
             <button type="button" data-game="AVIATOR" class="game-btn bg-[#0a0a0c] border border-zinc-800 rounded-2xl p-3 flex flex-col items-center justify-center gap-3">
                 <div class="w-16 h-16 rounded-xl overflow-hidden bg-gradient-to-br from-red-900/80 to-black border border-red-500/30 flex items-center justify-center game-icon-container relative shadow-inner">
                      <span class="text-3xl relative z-10 drop-shadow-lg">✈️</span>
-                     <svg class="absolute bottom-0 left-0 w-full h-full opacity-40 z-0" viewBox="0 0 100 100" preserveAspectRatio="none"><path d="M0 100 L20 80 L40 85 L100 20 L100 100 Z" fill="rgba(239, 68, 68, 0.2)" stroke="rgba(239, 68, 68, 0.5)" stroke-width="2"/></svg>
                 </div>
                 <span class="font-black text-xs text-white tracking-wider" style="font-family: sans-serif;">AVIATOR</span>
             </button>
@@ -133,7 +127,6 @@
             <button type="button" data-game="APPLE" class="game-btn bg-[#0a0a0c] border border-zinc-800 rounded-2xl p-3 flex flex-col items-center justify-center gap-3">
                 <div class="w-16 h-16 rounded-xl overflow-hidden bg-gradient-to-br from-green-900 to-black border border-green-500/30 flex items-center justify-center game-icon-container relative shadow-inner">
                      <span class="text-3xl relative z-10 drop-shadow-lg">🍏</span>
-                     <div class="absolute inset-0 bg-[radial-gradient(circle,rgba(74,222,128,0.1)_0%,rgba(0,0,0,0)_70%)] z-0"></div>
                 </div>
                 <span class="font-black text-[10px] text-center leading-tight text-white tracking-widest" style="font-family: sans-serif;">APPLE OF<br>FORTUNE</span>
             </button>
