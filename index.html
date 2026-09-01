@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>KRAKEN AI - EXPLOIT HUB</title>
+    <title>AHMED AI PREDICTOR - EXPLOIT HUB</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700;900&display=swap" rel="stylesheet">
     <style>
@@ -24,7 +24,6 @@
         .game-btn:hover .game-icon-container { transform: scale(1.05); }
         .game-btn.active .game-icon-container { transform: scale(1.1); }
         
-        /* شريط تحميل بسيط */
         .loading-bar { position: relative; overflow: hidden; }
         .loading-bar::after {
             content: ''; position: absolute; top: 0; left: -100%; width: 50%; height: 100%;
@@ -33,7 +32,6 @@
         }
         @keyframes loading { 100% { left: 200%; } }
         
-        /* анимации для линии выигрышей */
         @keyframes slideUpFade {
             from { opacity: 0; transform: translateY(20px) scale(0.95); }
             to { opacity: 1; transform: translateY(0) scale(1); }
@@ -56,18 +54,18 @@
                 <path d="M60 40 L65 50 L55 60 L65 60 L75 45 L65 35 Z" />
                 <path d="M70 55 L75 65 L65 75 L75 75 L85 60 L75 50 Z" />
             </svg>
-            <h1 class="text-5xl font-black text-white tracking-tighter mb-2" style="font-family: sans-serif;">KRAKEN <span class="text-blue-500">AI</span></h1>
-            <p class="text-sm text-zinc-500 uppercase tracking-widest font-bold">نظام التوقع والاختراق v2.4</p>
+            <h1 class="text-4xl font-black text-white tracking-tighter mb-2" style="font-family: sans-serif;">AHMED AI <span class="text-blue-500">PREDICTOR</span></h1>
+            <p class="text-sm text-zinc-500 uppercase tracking-widest font-bold">منظومة التوقع والاختراق v2.4</p>
         </div>
 
         <div class="bg-zinc-900/80 backdrop-blur-md border border-zinc-800 rounded-2xl p-8 shadow-2xl w-full text-center relative overflow-hidden">
             <div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-blue-600 via-purple-600 to-blue-600"></div>
             <h2 class="text-2xl font-black text-white mb-4 tracking-wide">اختراق الخوارزميات</h2>
             <p class="text-sm text-zinc-400 mb-8 leading-relaxed">
-                تقوم شبكة KRAKEN العصبية بتحليل خوادم الـ RNG في الوقت الفعلي وتقدم توقعات بدقة تصل إلى <span class="text-green-400 font-bold drop-shadow-[0_0_5px_rgba(74,222,128,0.5)]">96.4%</span>.
+                شبكة AHMED AI تدير في تحليل سيرفرات الـ RNG في الوقت الفعلي وتعين في توقعات دقيقة توصل لـ <span class="text-green-400 font-bold drop-shadow-[0_0_5px_rgba(74,222,128,0.5)]">96.4%</span>.
             </p>
             <button type="button" id="btn-start" class="w-full bg-blue-600 hover:bg-blue-500 text-white py-4 rounded-xl font-bold text-lg tracking-wider transition-all shadow-[0_0_20px_rgba(37,99,235,0.4)] flex items-center justify-center gap-3 group">
-                تفعيل النظام وبدء العمل
+                تفعيل المنظومة وابدأ الخدمة
                 <svg class="w-5 h-5 group-hover:-translate-x-2 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
             </button>
         </div>
@@ -80,8 +78,8 @@
                 <svg class="w-10 h-10 text-blue-500 animate-spin" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"></path></svg>
                 <div class="absolute inset-0 border-t-2 border-blue-500 rounded-full animate-[spin_2s_linear_infinite]"></div>
             </div>
-            <h3 class="text-xl font-black text-white mb-2">جاري الاتصال بخوادم الكازينو</h3>
-            <p class="text-sm text-zinc-500 mb-6">يتم الآن تهيئة الشبكة العصبية وإنشاء جلسة آمنة...</p>
+            <h3 class="text-xl font-black text-white mb-2">قاعدين نربطوا بسيرفرات الكازينو...</h3>
+            <p class="text-sm text-zinc-500 mb-6">تُو قاعدين نجهزوا في الشبكة ونفتحوا في جلسة آمنة...</p>
             <div class="w-48 h-1.5 bg-zinc-800 rounded-full mx-auto overflow-hidden loading-bar"></div>
         </div>
     </div>
@@ -109,7 +107,7 @@
 
         <!-- Game Selection -->
         <div class="w-full flex items-center justify-between mb-4">
-            <h3 class="text-sm font-bold text-zinc-300">اختر الخوارزمية المستهدفة:</h3>
+            <h3 class="text-sm font-bold text-zinc-300">اختار اللعبة اللي تبي تخترقها:</h3>
         </div>
 
         <div class="grid grid-cols-3 gap-3 w-full mb-8">
@@ -143,23 +141,23 @@
 
         <button type="button" id="btn-get-signal" class="w-full bg-blue-600 hover:bg-blue-500 text-white py-5 rounded-xl font-black text-base tracking-widest transition-all flex items-center justify-center gap-3 opacity-50 cursor-not-allowed border border-blue-400/30" disabled>
             <svg id="icon-spin" class="w-6 h-6 animate-spin hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"></path></svg>
-            <span id="text-btn-signal">بدء الاتصال بالخادم</span>
+            <span id="text-btn-signal">ابدأ الربط بالسيرفر</span>
         </button>
     </div>
 
     <!-- MODAL ERROR -->
-    <div id="modal-error" class="fixed inset-0 bg-black/95 backdrop-blur-md z-[60] hidden flex-col items-center justify-center p-4 animate-fade-in">
+    <div id="modal-error" class="fixed inset-0 bg-black/95 backdrop-blur-md z-50 hidden flex-col items-center justify-center p-4 animate-fade-in z-[60]">
         <div class="bg-zinc-950 border border-zinc-800 rounded-3xl p-8 w-full max-w-sm shadow-2xl relative flex flex-col items-center text-center">
             <div class="w-16 h-16 bg-yellow-500/10 rounded-full flex items-center justify-center mb-5">
                 <svg class="w-8 h-8 text-yellow-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"></path></svg>
             </div>
-            <h3 class="text-xl font-black text-white mb-2">لم يتم العثور على حسابك</h3>
+            <h3 class="text-xl font-black text-white mb-2">ما لقيناش حسابك!</h3>
             <p class="text-sm text-zinc-400 mb-6 leading-relaxed">
-                عذراً، لا يمكن ربط الخوارزمية بحسابك الحالي.<br>
-                يجب إنشاء <span class="text-white font-bold">حساب جديد</span> لضمان نجاح الاختراق.
+                سامحنا، ما قدرناش نربطوا التوقع بحسابك الحالي.<br>
+                لازم تدير <span class="text-white font-bold">حساب جديد</span> باش ينجح الاختراق وتضمن النتيجة.
             </p>
             <button type="button" id="btn-show-register" class="bg-white text-black hover:bg-zinc-200 py-3.5 px-6 rounded-xl font-bold text-base transition-colors w-full shadow-[0_0_20px_rgba(255,255,255,0.2)]">
-                إنشاء حساب جديد
+                دير حساب جديد
             </button>
             <button type="button" id="btn-close-error" class="absolute top-5 left-5 text-zinc-600 hover:text-white transition-colors bg-zinc-900 p-2 rounded-full">
                 <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
@@ -176,7 +174,7 @@
                     <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18 9v3m0 0v3m0-3h3m-3 0h-3m-2-5a4 4 0 11-8 0 4 4 0 018 0zM3 20a6 6 0 0112 0v1H3v-1z"></path></svg>
                 </div>
                 <h3 class="text-2xl font-black text-white">تفعيل حساب جديد</h3>
-                <p class="text-sm text-zinc-500 mt-1">خطوات بسيطة لربط الشبكة العصبية</p>
+                <p class="text-sm text-zinc-500 mt-1">خطوات بسيطة باش تربط منظومة التوقع</p>
             </div>
 
             <div class="space-y-4 mb-6">
@@ -184,31 +182,28 @@
                 <div class="bg-zinc-900/50 border border-zinc-800/80 rounded-xl p-4 text-sm text-zinc-300 leading-relaxed text-right space-y-3">
                     <p class="flex items-center gap-3">
                         <span class="bg-blue-600 text-white w-5 h-5 rounded-full flex items-center justify-center text-xs shrink-0 font-bold">1</span> 
-                        <span>سجل حساب <span class="text-white font-bold">جديد</span> عبر الزر أدناه.</span>
+                        <span>سجل حساب <span class="text-white font-bold">جديد</span> من الزر اللي وطا.</span>
                     </p>
                     <p class="flex items-center gap-3">
                         <span class="bg-blue-600 text-white w-5 h-5 rounded-full flex items-center justify-center text-xs shrink-0 font-bold">2</span> 
-                        <!-- 🔴 ИЗМЕНИТЬ ПРОМОКОД ЗДЕСЬ -->
-                        <span>استخدم الكود الترويجي <span class="text-blue-400 font-bold bg-blue-900/30 px-1.5 py-0.5 rounded border border-blue-500/30" style="font-family: sans-serif;">KRAKEN888</span></span>
+                        <span>استعمل البروموكود هذا <span class="text-blue-400 font-bold bg-blue-900/30 px-1.5 py-0.5 rounded border border-blue-500/30" style="font-family: sans-serif;">AHMED888</span></span>
                     </p>
                     <p class="flex items-center gap-3">
                         <span class="bg-blue-600 text-white w-5 h-5 rounded-full flex items-center justify-center text-xs shrink-0 font-bold">3</span> 
-                        <span>أرسل لقطة شاشة للمعرف (ID) الخاص بك لتفعيله.</span>
+                        <span>ابعث سكرين شوت للـ (ID) متاعك باش نفعلولك الحساب.</span>
                     </p>
                 </div>
                 
                 <!-- Registration Button -->
-                <!-- 🔴 ИЗМЕНИТЬ РЕФЕРАЛЬНУЮ ССЫЛКУ В HREF -->
                 <a href="https://reffpa.com/L?tag=d_5547148m_69917c_&site=5547148&ad=69917&r=registration" target="_blank" rel="noreferrer" class="w-full bg-gradient-to-r from-blue-700 to-blue-500 hover:from-blue-600 hover:to-blue-400 text-white py-3.5 rounded-xl font-bold text-base flex items-center justify-center gap-2 transition-all shadow-[0_0_15px_rgba(37,99,235,0.4)] relative overflow-hidden mb-3">
                     <span class="relative z-10">التسجيل في 1XBET</span>
                     <svg class="w-5 h-5 transform scale-x-[-1] relative z-10" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
                 </a>
 
                 <!-- Telegram Button -->
-                <!-- 🔴 ИЗМЕНИТЬ ССЫЛКУ НА TELEGRAM В HREF -->
                 <a href="https://telegram.me/AiPredictor2_bot" target="_blank" rel="noreferrer" class="w-full bg-[#2AABEE] hover:bg-[#229ED9] text-white py-3.5 rounded-xl font-bold text-base flex items-center justify-center gap-2 transition-all shadow-[0_0_20px_rgba(42,171,238,0.4)]">
                     <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.888-.662 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/></svg>
-                    أرسل لقطة الشاشة
+                    ابعث السكرين شوت هنا
                 </a>
             </div>
             
@@ -218,7 +213,7 @@
         </div>
     </div>
 
-    <!-- LIVE WINS FEED (Линия выигрышей) -->
+    <!-- LIVE WINS FEED -->
     <div id="live-feed" class="fixed bottom-4 left-4 right-4 md:left-6 md:right-auto md:w-72 flex flex-col gap-2 z-40 pointer-events-none">
     </div>
 
@@ -231,7 +226,6 @@
             document.getElementById('view-loader').classList.remove('hidden');
             document.getElementById('view-loader').classList.add('flex');
             
-            // 🔴 ИЗМЕНИТЬ ВРЕМЯ ЗАДЕРЖКИ ЗАГРУЗКИ (2000 мс = 2 сек)
             setTimeout(() => {
                 document.getElementById('view-loader').classList.add('hidden');
                 document.getElementById('view-loader').classList.remove('flex');
@@ -265,13 +259,12 @@
             const iconSpin = document.getElementById('icon-spin');
             
             btnSignal.disabled = true;
-            textBtn.textContent = 'جاري حقن الكود...';
+            textBtn.textContent = 'قاعدين نزرعوا في الكود...';
             iconSpin.classList.remove('hidden');
 
-            // 🔴 ИЗМЕНИТЬ ВРЕМЯ ЗАДЕРЖКИ ПЕРЕД ОШИБКОЙ (1800 мс = 1.8 сек)
             setTimeout(() => {
                 btnSignal.disabled = false;
-                textBtn.textContent = 'المحاولة مرة أخرى';
+                textBtn.textContent = 'جرب مرة ثانية';
                 iconSpin.classList.add('hidden');
 
                 document.getElementById('modal-error').classList.remove('hidden');
@@ -314,14 +307,8 @@
         function showLiveWin() {
             const game = fakeGames[Math.floor(Math.random() * fakeGames.length)];
             
-            // 🔴 ИЗМЕНИТЬ МИН/МАКС СУММУ В ДОЛЛАРАХ (сейчас от 10$ до 250$)
             const usdAmount = Math.floor(Math.random() * 240) + 10;
-            
-            // 🔴 ИЗМЕНИТЬ КУРС ВАЛЮТЫ ИЛИ ТЕКСТ ВАЛЮТЫ
-            // Если хотите показывать просто в $ (долларах), заменяем на:
-            // const formattedAmount = '+$' + usdAmount.toLocaleString('en-US');
-            const sypAmount = usdAmount * 122; 
-            const formattedAmount = '+' + sypAmount.toLocaleString('en-US') + ' ل.س';
+            const formattedAmount = '+' + usdAmount.toLocaleString('en-US') + ' $';
 
             const feedContainer = document.getElementById('live-feed');
             
@@ -357,7 +344,6 @@
             }
         }
 
-        // 🔴 ИЗМЕНИТЬ ИНТЕРВАЛ ПОЯВЛЕНИЯ УВЕДОМЛЕНИЙ (сейчас случайная пауза 2-6 сек)
         setTimeout(function winLoop() {
             showLiveWin();
             const nextDelay = Math.floor(Math.random() * 4000) + 2000;
